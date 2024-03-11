@@ -1,4 +1,15 @@
+const lenis = new Lenis()
 
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
 var tl=gsap.timeline({scrollTrigger:{
   trigger:".part-1",
   start:"50% 50%",
@@ -127,7 +138,7 @@ let tl6= gsap.timeline({
   scrollTrigger:{
       trigger: ".part-6",
       start:"0% 70%",
-      end: "20% 50%",
+      end: "50% 50%",
       // markers: true,
       scrub: 1,
   },  
