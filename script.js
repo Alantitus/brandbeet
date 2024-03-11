@@ -48,7 +48,7 @@ tl.to(".scrolling",{
 var tl2 = gsap.timeline({scrollTrigger:{
   trigger: ".part-2",
   start:"0% 70%",
-  end:"50% 50%",
+  end:"250% 50%",
   scrub:true,
   // markers:true,
 }})
